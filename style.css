@@ -1,0 +1,149 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient( rgba(15, 15, 15, 0.582), rgba(34, 34, 34, 0.082));
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0vw 2vw 1vw 2vw;
+    margin: 0vw 0vw 3vw 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient( rgba(15, 15, 15, 0.705), rgba(77, 77, 77, 0));
+}
+nav .logo{
+    width: 3.5vw;
+}
+
+nav .logo:hover{
+    width: 3.6vw;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 3vw;
+}
+
+nav ul li a{
+text-decoration: none;
+color: #fff;
+font-size: 1.5vw;
+transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ffffff8f;
+    font-size: 1.55vw;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 3.6vw;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content h2{
+    font-size: 6vw;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.content h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+
+.content a:hover{
+    -webkit-text-stroke: 0px #000000;
+    color: rgba(255, 255, 255, 0.945);
+    background-color: #ffffff2a;
+    font-size: 26px;
+    border: solid #ffffffbd;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px; 
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+.back-video{
+    width: 100%;
+    height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+.back-video{
+    width: auto;
+    height: 100%;
+    }
+}
+
+.iframe-info{
+    background-color: rgba(32, 32, 32, 0);
+    border: transparent;
+    border-radius: 10px 10px 0 0;
+    margin-top: 5%;
+    }
+
+iframe{
+background-color: rgba(32, 32, 32, 0);
+border: transparent;
+border-radius: 10px 10px 0 0;
+margin-top: 5%;
+margin-bottom: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.966);
+}
+
+.button {
+    background-color: transparent;
+    border-color: transparent;
+}

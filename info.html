@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Palm Harbor Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="Images/logo.png">
+</head>
+
+<body>
+    <div class="hero">  
+        <video id="back-video" autoplay loop muted plays-inline class="back-video">  
+          <source src="videos/background-video1.mp4" type="video/mp4">  
+        </video>  
+        <nav>  
+          <button class="button" onclick="changeVideo()">  
+             <img src="images/logo.png" class="logo">  
+          </button>  
+        <Div class="content">
+            <h1>Hi, Palm Harbor</h1>
+        </Div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="/">Games</a></li>
+            <li><a href="apps.html">Apps</a></li> 
+            <li><a href="chat.html">Discord</a></li> 
+            <li><a href="info.html">Information</a></li>
+        </ul>
+    </nav>
+    <iframe class="iframe" id="iframe" float:="center" src="info1.html" width= "80%" height= "90%"></iframe>
+</Div>
+<script>  
+  function changeVideo() {   
+      var video = document.getElementById("back-video");   
+      var videos = ["videos/easteregg1.mp4", "videos/easteregg2.mp4", "videos/easteregg3.mp4"];
+      var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+      video.src = randomVideo;
+      video.muted = false;
+      video.volume = 0.2;
+      video.play();
+  
+      var iframe = document.getElementById("iframe");  
+      iframe.style.display = "none";  
+    }
+</script>  
+</body>
+</html>

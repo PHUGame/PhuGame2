@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Palm Harbor Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="Images/logo.png">
+</head>
+
+<body>
+    <div class="hero">  
+        <video id="back-video" autoplay loop muted plays-inline class="back-video">  
+          <source src="videos/background-video1.mp4" type="video/mp4">  
+        </video>  
+        <nav>  
+          <button class="button" onclick="changeVideo()">  
+             <img src="images/logo.png" class="logo">  
+          </button>  
+        <Div class="content">
+            <h1>Palm Harbor Chat</h1>
+        </Div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="/">Games</a></li>
+            <li><a href="apps.html">Apps</a></li> 
+            <li><a href="chat.html">Discord</a></li> 
+            <li><a href="info.html">Information</a></li>
+        </ul>
+    </nav>
+    <widgetbot  id="iframe" server="1147267551039062119" channel="1147268090506252308"  width="8%" height="80%" style=" overflow: hidden; background-color: rgba(0, 0, 0, 0); border-radius: 8px 8px 0 0; vertical-align: top; width: 85%; height: 95%;"><iframe title="WidgetBot Discord chat embed" allow="clipboard-write; fullscreen" src="https://e.widgetbot.io/channels/1147267551039062119/1147268090506252308?api=6d428098-09a1-4ef8-a956-01dd9fa2113c" style="border: none; width: 100%; height: 92%;"></iframe></widgetbot>
+</Div>
+<script>  
+  function changeVideo() {   
+      var video = document.getElementById("back-video");   
+      var videos = ["videos/easteregg1.mp4", "videos/easteregg2.mp4", "videos/easteregg3.mp4"];
+      var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+      video.src = randomVideo;
+      video.muted = false;
+      video.volume = 0.2;
+      video.play();
+  
+      var iframe = document.getElementById("iframe");  
+      iframe.style.display = "none";  
+    }
+</script>  
+</body>
+</html>

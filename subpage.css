@@ -1,0 +1,97 @@
+body {
+    margin: 4% 4% 4% 4%;
+}
+
+h1 {
+    color: white;
+    font-size: 4vw;
+}
+
+p {
+    color: white;
+    font-size: 2vw;
+}
+
+.a-discord {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    border: 2px solid #fff;
+    padding: 14px 70px; 
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.a-discord:hover {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.753);
+    background-color: #ffffff42;
+}
+
+.white-border {
+    padding: 1vw 3vw 5vw 3vw ;
+    border: 2px solid#ffffff;
+    border-radius:30px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.parent {
+    display: inline-flex;
+    font-family: Arial;
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.games {
+    background-color: rgba(26, 26, 26, 0.692);
+    margin: 5vw 3vw 5vw 4vw;
+    padding: 0.2vw 0.2vw 0.1vw 0.2vw;
+    border-radius: 10px;
+}
+
+img {
+    width: 22vw;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+img:hover {
+background-color: #1616167c;
+padding: 0px 5px 0px 5px;
+filter: brightness(0.7)
+}
+
+
+.title {
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 2x 0 20px 0;
+    padding: 1vw;
+}
+
+.discription {
+    color: #cacaca;
+    font-size: 1vw;
+    font-family: calibri;
+    padding: 1vw;
+
+}
+
+.game-link {
+    color: transparent;
+}
+
+.game-header {
+    color: white;
+    font-size: 5vw; 
+    background-color: #161616;
+    border-radius: 10vw;
+    padding: 2vw 2vw 2vw 2vw;
+    text-align: center;
+}
